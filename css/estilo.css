@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    outline: none;
+}
+
+html, body{
+    width: 100%;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media screen and (max-width: 999.98px) {
+
+    header#cabecalho{
+        font-family: 'Pacifico', cursive;
+        color: #180F4A;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header#cabecalho nav{
+        display: none;
+    }
+
+    /* Container */
+
+    #whats{
+        display: none;
+    }
+
+    .branco{
+        display: none;
+    }
+
+    #container{
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    #container img{
+        width: 70%;
+        margin-top: 100px;
+    }
+
+    #parte-esquerda{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #parte-esquerda h4{
+        color: #180F4A;
+        letter-spacing: 15px;
+        font-size: 20px;
+    }
+    
+    #parte-esquerda h1{
+        color: #180F4A;
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+    
+    #parte-esquerda p{
+        color: rgba(126, 125, 125, 0.945);
+        margin-bottom: 40px;
+    }
+    
+    #parte-esquerda a{
+        background-color: #FF2978;
+        color: #FFF;
+        padding: 19px 18px;
+        border-radius: 7px;
+    }
+
+    #titulo-negocio{
+        font-family: 'Pacifico', cursive;
+        color: #180F4A;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    /* Container 2 */
+
+    #container-2 a{
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    .negocios{
+        transition: 0.2s;
+    }
+
+    a .negocios{
+        color: black;
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #FF2978;
+        border-radius: 7px;
+        margin-top: 20px;
+    }
+    
+    .negocios p{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .negocios ion-icon{
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        color:black;
+    }
+    
+    .negocios .temporario2{
+        display: none;
+    }
+    
+    .negocios:hover .temporario2{
+        display: block;
+        font-size: 18px;
+    }
+    
+    .negocios:hover .temporario1{
+        font-size: 18px;
+    }
+    
+    .negocios:hover .temporario1{
+        display: none;
+    }
+    
+    .negocios:hover ion-icon{
+        color:white;
+    }
+    
+    .negocios:hover{
+        color: #FFF;
+        background-color: #FF2978;
+    }
+
+    /* Rodapé */
+
+footer{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, #180F4A, black);
+    border-top: 5px solid #FF2978;
+    margin-top: 200px;
+}
+
+#rodape{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1{
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+footer p{
+    color: #FFF;
+}
+    
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media screen and (min-width: 1000px) {
+
+/* Cabeçalho */
+
+header#cabecalho{
+    width: 80%;
+    height: 110px;
+    margin: 0 auto;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 10%; 
+}
+
+header#cabecalho h1{
+    font-family: 'Pacifico', cursive;
+    color: #180F4A;
+}
+
+#cabecalho nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho nav ul a{
+    color: #180F4A;
+    padding: 13px 15px;
+    font-size: 18px;
+    margin-left: 0px;
+    letter-spacing: 0.8px;
+}
+
+#cabecalho nav ul a.fale-conosco{
+    margin-left: 25px;
+    padding: 12px 24px;
+    color: #FFF;
+    background-color: #180F4A;
+    border-radius: 8px;
+}
+
+#cabecalho nav ul a:hover{
+    color: #FF2978;
+    border-top: 4.5px solid #180F4A; 
+}
+
+#cabecalho nav ul a.fale-conosco:hover{
+    background-color: #FF2978;
+    color: #FFF;
+    border: none;
+}
+
+/* Container */
+
+#whats{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.branco{
+    width: 100%;
+    height: 110px;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container img{
+    width: 50%;
+}
+
+#parte-esquerda h4{
+    color: #180F4A;
+    letter-spacing: 15px;
+    font-size: 20px;
+}
+
+#parte-esquerda h1{
+    color: #180F4A;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+#parte-esquerda p{
+    color: rgba(126, 125, 125, 0.945);
+    margin-bottom: 40px;
+}
+
+#parte-esquerda a{
+    background-color: #FF2978;
+    color: #FFF;
+    padding: 19px 18px;
+    border-radius: 7px;
+}
+
+#titulo-negocio{
+    font-family: 'Pacifico', cursive;
+    color: #180F4A;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+/* Container-2 */
+
+#container-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#container-2 a{
+    display: block;
+    width: 30%;
+    margin: 2%;
+}
+
+.negocios{
+    transition: 0.5s;
+}
+
+a .negocios{
+    color: black;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #FF2978;
+    border-radius: 7px;
+}
+
+.negocios p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.negocios ion-icon{
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.negocios .temporario2{
+    display: none;
+}
+
+.negocios:hover .temporario2{
+    display: block;
+    font-size: 18px;
+}
+
+.negocios:hover .temporario1{
+    font-size: 18px;
+}
+
+.negocios:hover .temporario1{
+    display: none;
+}
+
+.negocios:hover ion-icon{
+    color: white;
+}
+
+.negocios:hover{
+    color: #FFF;
+    background-color: #FF2978;
+    transform: translateY(40px);
+    /*padding-top: 50px;*/
+    /*margin-top: 40px;*/
+    /*padding-bottom: 45px;*/
+}
+
+/* Rodapé */
+
+footer{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, #180F4A, black);
+    border-top: 5px solid #FF2978;
+    margin-top: 200px;
+}
+
+#rodape{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1{
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+footer p{
+    color: #FFF;
+}
+
+}
